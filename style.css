@@ -1,0 +1,97 @@
+body {
+    font-family: Arial, sans-serif;
+    background: url('gambar.jpg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.9); /* Transparansi agar teks tetap terbaca */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    margin-top: 20px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+}
+
+input, select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Perbaikan radio button agar sejajar dan sebaris */
+.radio-group {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Jarak antar radio button */
+    margin-top: 5px;
+    flex-wrap: nowrap; /* Mencegah turun ke bawah */
+}
+
+.radio-group label {
+    display: flex;
+    align-items: center;
+    gap: 5px; /* Jarak antara radio button dan teks */
+    font-weight: normal;
+    white-space: nowrap; /* Mencegah teks turun ke bawah */
+}
+
+/* Perbaikan checkbox agar sejajar dengan teks */
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Jarak antara checkbox dan teks */
+    margin-top: 10px;
+    width: 100%;
+}
+
+.checkbox-container input[type="checkbox"] {
+    width: 16px; /* Ukuran checkbox */
+    height: 16px;
+    margin: 0; /* Hapus margin bawaan */
+}
+
+/* Button */
+button {
+    background-color: #28a745 !important; /* Paksa warna hijau */
+    color: white !important; /* Paksa teks putih */
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #218838 !important; /* Warna saat hover */
+}
+
+/* Tombol Batal */
+.cancel {
+    background-color: #dc3545 !important; /* Paksa warna merah */
+}
+
+.cancel:hover {
+    background-color: #c82333 !important; /* Warna saat hover */
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>FORM HTML</title>
+</head>
+
+<body>
+    <h2>FORM PEMESANAN TIKET KERETA API</h2>
+    <form action="proses_pemesanan.php" method="POST">
+        <label>Nama :</label>
+        <input type="text" name="Nama" size="30" placeholder="Masukkan nama sesuai KTP" /> <br />
+
+        <label>Tanggal keberangkatan :</label>
+        <input type="date" name="tanggal" /> <br />
+
+        <div class="radio-group">
+            <label>
+                <input type="radio" name="gender" value="Laki-laki"> Laki-laki
+            </label>
+            <label>
+                <input type="radio" name="gender" value="Perempuan"> Perempuan
+            </label>
+        </div>
+        
+        <label>Jenis Kursi :</label>
+        <select name="jenis_kursi" id="kursi">
+            <option value="Ekonomi" selected>Ekonomi</option>
+            <option value="Bisnis">Bisnis</option>
+            <option value="Eksekutif">Eksekutif</option>
+            <option value="Premium">Premium</option>
+        </select> <br />
+
+        <label>Harga :</label>
+        <input type="text" name="harga" id="harga" size="10" readonly /> <br />
+
+        <label>Jumlah Penumpang :</label>
+        <input type="number" name="jumlah_penumpang" id="penumpang" value="0" min="0" max="30" /> <br />
+
+        <label>Total Harga :</label>
+        <input type="text" name="total_harga" id="total" size="20" readonly /> <br />
+        
+        <input type="button" id="hitung" value="Hitung Total Harga" /> <br />
+    
+        <div class="checkbox-container">
+            <input type="checkbox" id="agree">
+            <label for="agree">Saya menyatakan setuju terhadap semua ketentuan yang berlaku</label>
+        </div>    
+
+        <button type="submit" class="btn btn-success">Pesan</button>
+        <button type="button" class="btn btn-danger cancel">Batal</button>
+    </form>
+    <script src="tiket.js"></script>
+</body>
+</html>
